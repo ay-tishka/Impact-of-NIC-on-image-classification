@@ -17,6 +17,13 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 - US License Plates – For OCR evaluation via PaddleOCR.
 
 ## 🧪 Experiments Summary
+**0. Testing Cheng2020-Anchor and Cheng2020-Attn AI-based compression model for Kodak dataset
+- Task: Investigate models' performance
+- Metric: PSNR, SSIM, VIF, BPP, MSE, MAE
+- Dataset: https://www.kaggle.com/datasets/sherylmehta/kodak-dataset
+- Notable finding: Rate-distortion trade-off by increasing the quality of compression model
+- Running: `experiments/AICompression.ipynb`
+  
 **1. Classification**
 - Classifier: DenseNet201 (pretrained and custom-trained)
 - Task: Skin lesion classification (9-class)
