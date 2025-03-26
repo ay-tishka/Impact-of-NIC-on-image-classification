@@ -23,9 +23,10 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 - Datasets: https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic/data
 
   Make sure that Test and Train directories lie in `experiments/image_compression/ISIC-skin-cancer`
-- Pretrained model for test in experiments/AICompression.ipynb: https://www.kaggle.com/code/muhammadsamarshehzad/skin-cancer-classification-densenet201-99-acc/output
+- Pretrained model for test in `experiments/AICompression.ipynb`: https://www.kaggle.com/code/muhammadsamarshehzad/skin-cancer-classification-densenet201-99-acc/output
 - Metric: Accuracy, F1 score, Cohen’s Kappa
 - Notable finding: Up to 20% drop in accuracy on compressed images vs original
+- Remark: In order to run notebook `experiments/image_classification/DenseNet121_Aug_Clf (2).ipynb`, first run through Experiment 2 in `experiments/AICompression.ipynb` in order to generate degraded test images. Those images will lie in specific folder `decompressed` inside each label folder of test dataset.
 
 **2. OCR on Compressed Images**
 - OCR Tool: PaddleOCR (PP-OCRv3 pipeline)
