@@ -6,7 +6,7 @@ This project investigates how AI-based image compression—particularly neural i
 
 Traditional compression methods (e.g., JPEG) often sacrifice subtle features important for classification. This project compares conventional methods with state-of-the-art NIC models, focusing on their impact on downstream tasks like medical image diagnosis and license plate recognition.
 
-**Input image**            |  **Compressed Image**
+**Input image text detection**            |  **Compressed Image text detection**
 :-------------------------:|:-------------------------:
 ![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/uncomp_better_1.png)   |  ![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/comp_worse_1.png)
 
@@ -27,6 +27,7 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 ```bash
 pip install compressai
 ```
+It will require the notebook to be restarted for once.
 
 ## CompressAI Local Installation Guide
 
@@ -42,6 +43,10 @@ python3 -m pip install jupyter
 python3 -m ipykernel install --user --name=compressaienv
 python3 -m pip install pybind11
 module load compilers/gcc-8.3.0
+```
+
+Clone [CompressAI](https://github.com/InterDigitalInc/CompressAI) 
+```
 git clone https://github.com/InterDigitalInc/CompressAI compressai
 cd compressai
 pip install wheel
@@ -75,3 +80,14 @@ pip install dist/compressai-*.whl
 - OCR Tool: PaddleOCR (PP-OCRv3 pipeline)
 - Finding: Compression (Q3) improved OCR in ~12.3% of cases
 - Hypothesis: Compression smooths noise and enhances character clarity
+
+
+## Authors
+QuocViet Pham, Thanakrit Lerdmatayakul, Arofenitra Rarivonjy, Tikhon Mavrin
+
+
+## Related works
+
+
+
+
