@@ -56,7 +56,7 @@ pip install dist/compressai-*.whl
 ```
 
 
-## 🧪 Experiments Summary
+## Experiments Summary
 **0. Testing Cheng2020-Anchor and Cheng2020-Attn AI-based compression model for Kodak dataset**
 - Task: Investigate models' performance
 - Metric: PSNR, SSIM, VIF, BPP, MSE, MAE
