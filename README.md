@@ -2,7 +2,7 @@
 
 This project investigates how AI-based image compression—particularly neural image compression (NIC)—affects image classification performance. It evaluates the trade-off between compression efficiency and the retention of discriminative features across both general and task-specific datasets.
 
-## 📌 Overview
+## Project Overview
 
 Traditional compression methods (e.g., JPEG) often sacrifice subtle features important for classification. This project compares conventional methods with state-of-the-art NIC models, focusing on their impact on downstream tasks like medical image diagnosis and license plate recognition.
 
@@ -11,15 +11,16 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 ![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/uncomp_better_1.png)   |  ![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/comp_worse_1.png)
 
 
-## 🧠 Key Contributions
+## Key Contributions
 - Compared Cheng2020-anchor and Cheng2020-attn NIC models against JPEG using PSNR, SSIM, VIF, and BPP.
 - Analyzed performance degradation in classification on compressed medical images (ISIC2018 dataset).
 - Explored surprising improvements in OCR accuracy for license plate recognition after compression.
 
-## 📊 Datasets
+## Datasets Used
 - Kodak – Used for evaluating compression performance as a baseline.
 - ISIC2018 – Skin lesion classification with high-resolution medical images.
 - US License Plates – For OCR evaluation via PaddleOCR.
+- Aro
 
 # User guide
 
