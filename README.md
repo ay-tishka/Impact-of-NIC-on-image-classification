@@ -6,6 +6,11 @@ This project investigates how AI-based image compression—particularly neural i
 
 Traditional compression methods (e.g., JPEG) often sacrifice subtle features important for classification. This project compares conventional methods with state-of-the-art NIC models, focusing on their impact on downstream tasks like medical image diagnosis and license plate recognition.
 
+**Input image**            |  **Compressed Image**
+:-------------------------:|:-------------------------:
+![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/uncomp_better_1.png)   |  ![](https://github.com/ay-tishka/Impact-of-NIC-on-image-classification/blob/main/experiments/license%20analysis/comp_worse_1.png)
+
+
 ## 🧠 Key Contributions
 - Compared Cheng2020-anchor and Cheng2020-attn NIC models against JPEG using PSNR, SSIM, VIF, and BPP.
 - Analyzed performance degradation in classification on compressed medical images (ISIC2018 dataset).
@@ -15,6 +20,35 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 - Kodak – Used for evaluating compression performance as a baseline.
 - ISIC2018 – Skin lesion classification with high-resolution medical images.
 - US License Plates – For OCR evaluation via PaddleOCR.
+
+# User guide
+
+## CompressAI For Colab users:
+```bash
+pip install compressai
+```
+
+## CompressAI Local Installation Guide
+
+```bash
+python3 -m venv compressaienv
+source compressaienv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install torch torchvision torchaudio
+python3 -m pip install matplotlib pandas
+python3 -m pip install numpy scipy
+python3 -m pip install ipykernel
+python3 -m pip install jupyter
+python3 -m ipykernel install --user --name=compressaienv
+python3 -m pip install pybind11
+module load compilers/gcc-8.3.0
+git clone https://github.com/InterDigitalInc/CompressAI compressai
+cd compressai
+pip install wheel
+python3 setup.py bdist_wheel --dist-dir dist/
+pip install dist/compressai-*.whl
+```
+
 
 ## 🧪 Experiments Summary
 **0. Testing Cheng2020-Anchor and Cheng2020-Attn AI-based compression model for Kodak dataset**
