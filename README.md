@@ -64,7 +64,19 @@ pip install dist/compressai-*.whl
 - Notable finding: Rate-distortion trade-off by increasing the quality of compression model
 - Running: `experiments/AICompression.ipynb`
   
-**1. Classification**
+**1.Skin Lesion Classification Summary**
+
+- **Model**: DenseNet201 (pretrained + custom)
+- **Task**: 9-class skin lesion classification
+- **Data**: [ISIC Dataset](https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic/data)  
+  → Place `Train` and `Test` in `experiments/image_compression/ISIC-skin-cancer`
+- **Weights**: [`skin_disease_model.h5`](https://www.kaggle.com/code/muhammadsamarshehzad/skin-cancer-classification-densenet201-99-acc/output) → Save in `experiments/`
+- **Metrics**: Accuracy, F1, Cohen’s Kappa
+- **Finding**: Up to 20% accuracy drop on compressed images
+- **Note**: Run `AICompression.ipynb` first to generate degraded test images before using `DenseNet121_Aug_Clf (2).ipynb`
+
+
+<!---
 - Classifier: DenseNet201 (pretrained and custom-trained)
 - Task: Skin lesion classification (9-class)
 - Datasets: https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic/data
@@ -76,6 +88,9 @@ pip install dist/compressai-*.whl
 - Metric: Accuracy, F1 score, Cohen’s Kappa
 - Notable finding: Up to 20% drop in accuracy on compressed images vs original
 - Remark: In order to run notebook `experiments/image_classification/DenseNet121_Aug_Clf (2).ipynb`, first run through Experiment 2 in `experiments/AICompression.ipynb` in order to generate degraded test images. Those images will lie in specific folder `decompressed` inside each label folder of test dataset.
+-->
+
+
 
 **2. OCR on Compressed Images**
 
