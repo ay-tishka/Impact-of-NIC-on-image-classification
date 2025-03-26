@@ -24,6 +24,8 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 
   Make sure that Test and Train directories lie in `experiments/image_compression/ISIC-skin-cancer`
 - Pretrained model for test in `experiments/AICompression.ipynb`: https://www.kaggle.com/code/muhammadsamarshehzad/skin-cancer-classification-densenet201-99-acc/output
+
+  Make sure downloaded `skin_disease_model.h5` file lies in `experiments` directory.
 - Metric: Accuracy, F1 score, Cohen’s Kappa
 - Notable finding: Up to 20% drop in accuracy on compressed images vs original
 - Remark: In order to run notebook `experiments/image_classification/DenseNet121_Aug_Clf (2).ipynb`, first run through Experiment 2 in `experiments/AICompression.ipynb` in order to generate degraded test images. Those images will lie in specific folder `decompressed` inside each label folder of test dataset.
