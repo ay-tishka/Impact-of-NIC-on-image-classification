@@ -22,7 +22,7 @@ Traditional compression methods (e.g., JPEG) often sacrifice subtle features imp
 - Task: Skin lesion classification (9-class)
 - Datasets: https://www.kaggle.com/datasets/nodoubttome/skin-cancer9-classesisic/data
 
-  Make sure that Test and Train directory lie in `experiments/image_compression/ISIC-skin-cancer`
+  Make sure that Test and Train directories lie in `experiments/image_compression/ISIC-skin-cancer`
 - Pretrained model for test in experiments/AICompression.ipynb: https://www.kaggle.com/code/muhammadsamarshehzad/skin-cancer-classification-densenet201-99-acc/output
 - Metric: Accuracy, F1 score, Cohen’s Kappa
 - Notable finding: Up to 20% drop in accuracy on compressed images vs original
