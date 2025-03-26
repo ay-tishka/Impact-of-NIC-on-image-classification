@@ -78,9 +78,11 @@ pip install dist/compressai-*.whl
 - Remark: In order to run notebook `experiments/image_classification/DenseNet121_Aug_Clf (2).ipynb`, first run through Experiment 2 in `experiments/AICompression.ipynb` in order to generate degraded test images. Those images will lie in specific folder `decompressed` inside each label folder of test dataset.
 
 **2. OCR on Compressed Images**
-- OCR Tool: PaddleOCR (PP-OCRv3 pipeline)
-- Finding: Compression (Q3) improved OCR in ~12.3% of cases
-- Hypothesis: Compression smooths noise and enhances character clarity
+
+- **Tool**: PaddleOCR (PP-OCRv3)
+- **Setup**: US license plate dataset, Cheng2020-anchor & attn, Q1/Q3/Q6
+- **Finding**: Q3 compression improved OCR in **~12.3%** of cases
+- **Insight**: Anchor models outperformed; compression smoothed noise, boosted clarity
 
 
 ## Authors
